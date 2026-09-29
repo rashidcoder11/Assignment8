@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar Designs</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* ================= NAVBAR 1 ================= */
+
+        .nav1-area {
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9f9;
+        }
+
+        .navbar1 {
+            width: 365px;
+            height: 38px;
+            background-color: #111111;
+            border: 4px solid #111111;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            padding: 2px 5px;
+            box-shadow: 0 8px 15px #999999;
+        }
+
+        .logo1 {
+            width: 28px;
+            height: 28px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 14px;
+            margin-right: 12px;
+        }
+
+        .navbar1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 10px;
+            margin-right: 18px;
+        }
+
+        .email {
+            margin-left: auto;
+            background-color: white;
+            color: #222222;
+            border-radius: 20px;
+            padding: 8px 12px;
+            font-size: 10px;
+        }
+
+
+        /* ================= NAVBAR 2 ================= */
+
+        .nav2-area {
+            height: 350px;
+            display: flex;
+            align-items: flex-end;
+            background-color: white;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .navbar2 {
+            width: 100%;
+            height: 55px;
+            border-bottom: 1px solid #dddddd;
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+        }
+
+        .logo2 {
+            font-size: 14px;
+            font-weight: bold;
+            color: #111111;
+        }
+
+        .logo2-symbol {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .menu2 {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .menu2 a {
+            color: #111111;
+            text-decoration: none;
+            font-size: 11px;
+        }
+
+        .login {
+            margin-left: 70px;
+        }
+
+        .signup {
+            background-color: #171717;
+            color: white !important;
+            padding: 8px 14px;
+            border-radius: 4px;
+        }
+
+
+        /* ================= NAVBAR 3 ================= */
+
+        .nav3-area {
+            min-height: 500px;
+            padding-top: 100px;
+            background: linear-gradient(135deg, #396ec2, #101f5d, #38246d);
+        }
+
+        .navbar3 {
+            width: 75%;
+            height: 85px;
+            margin: auto;
+            padding: 0 30px;
+            border: 1px solid rgba(255,255,255,0.35);
+            border-radius: 18px;
+            background-color: rgba(255,255,255,0.15);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo3 {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo3-circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #36c8f2, #687af4);
+            margin-right: 12px;
+        }
+
+        .menu3 {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .menu3 a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .signup3 {
+            background: linear-gradient(90deg, #28bcef, #8588f2);
+            color: white;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 14px;
+        }
+
+        .mobile-nav {
+            display: none;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 700px) {
+
+            .navbar1 {
+                width: 95%;
+            }
+
+            .navbar1 a {
+                margin-right: 7px;
+                font-size: 9px;
+            }
+
+            .email {
+                font-size: 8px;
+            }
+
+            .menu2 {
+                gap: 10px;
+            }
+
+            .login {
+                margin-left: 10px;
+            }
+
+            .navbar3 {
+                width: 70%;
+                height: 75px;
+            }
+
+            .navbar3 .menu3 {
+                display: none;
+            }
+
+            .mobile-nav {
+                display: flex;
+                margin-left: auto;
+                flex-direction: column;
+                gap: 6px;
+            }
+
+            .mobile-nav span {
+                width: 35px;
+                height: 3px;
+                background-color: white;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- NAVBAR 1 -->
+
+    <div class="nav1-area">
+
+        <nav class="navbar1">
+
+            <div class="logo1">◒</div>
+
+            <a href="#">Work</a>
+            <a href="#">About</a>
+            <a href="#">Playground</a>
+            <a href="#">Resource</a>
+
+            <span class="email">ihyaet@gmail.com</span>
+
+        </nav>
+
+    </div>
+
+
+    <!-- NAVBAR 2 -->
+
+    <div class="nav2-area">
+
+        <nav class="navbar2">
+
+            <div class="logo2">
+                <span class="logo2-symbol">◆</span>
+                Shadcnblocks.com
+            </div>
+
+            <div class="menu2">
+
+                <a href="#">Products⌄</a>
+                <a href="#">Company⌄</a>
+                <a href="#">Contact</a>
+                <a href="#" class="login">Log in</a>
+                <a href="#" class="signup">Sign up</a>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <!-- NAVBAR 3 -->
+
+    <div class="nav3-area">
+
+        <nav class="navbar3">
+
+            <div class="logo3">
+
+                <div class="logo3-circle"></div>
+
+                Flow
+
+            </div>
+
+            <div class="menu3">
+
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Docs</a>
+                <a href="#">Blog</a>
+                <a href="#" class="signup3">Sign up</a>
+
+            </div>
+
+            <div class="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </nav>
+
+    </div>
+
+
+</body>
+</html>
